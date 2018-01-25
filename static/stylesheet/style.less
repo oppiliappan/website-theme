@@ -75,9 +75,11 @@ aside {
   background-color: @sidebar-bg;
   color: @sidebar-text-color;
   text-align: center;
+  font-family: @title-font;
 
   a {
     color: @sidebar-link-color;
+    font-family: @title-font;
   }
 
   a:hover {
@@ -276,7 +278,7 @@ main {
     text-align: center;
     white-space: nowrap;
     vertical-align: baseline;
-    border-radius: .25em;
+    border-radius: 0.25em;
   }
 
   a:hover {
@@ -464,6 +466,10 @@ ul.social {
   width: 90%;
   height: 70px;
   margin-left: 5%;
+}
+
+::-webkit-scrollbar{
+	display: none;
 }
 
 //
