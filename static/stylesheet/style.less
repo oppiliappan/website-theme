@@ -52,10 +52,12 @@ body {
 a {
   color: @link-color;
   text-decoration: none;
+  transition: 0.5s ease;
 }
 
 a:hover {
   color: @link-hover-color;
+  transition: 0.5s ease;
 }
 
 hr {
@@ -76,10 +78,12 @@ aside {
   color: @sidebar-text-color;
   text-align: center;
   font-family: @title-font;
+  font-weight: bold;
 
   a {
     color: @sidebar-link-color;
     font-family: @title-font;
+    font-weight: normal;
   }
 
   a:hover {
@@ -164,6 +168,7 @@ main {
     header {
       h1, h2 {
         margin-bottom: 0;
+        color: @green;
       }
 
       p {
@@ -226,10 +231,10 @@ main {
     code {
       font-size: .8em;
       white-space: nowrap;
-      color: #c25;
+      color: @light-grey;
       padding: 1px 3px;
-      background-color: #f7f7f9;
-      border: 1px solid #e1e1e8;
+      background-color: @dark-grey;
+      border: 1px solid transparent;
       border-radius: 3px;
     }
 
@@ -242,7 +247,7 @@ main {
       border-spacing: 0;
 
       thead:first-child tr:first-child th {
-         border-top: 0;
+        border-top: 0;
       }
 
       th, td {
@@ -271,7 +276,7 @@ main {
 .tag-cloud {
   a {
     background-color: @tag-bg;
-    padding: .2em .6em .2em;
+    padding: .6em .6em .6em .6em;
     font-size: .74em;
     line-height: 1;
     color: @tag-text-color;
@@ -469,7 +474,7 @@ ul.social {
 }
 
 ::-webkit-scrollbar{
-	display: none;
+  display: none;
 }
 
 //
